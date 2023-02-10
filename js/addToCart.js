@@ -34,7 +34,7 @@ function displayCartItems() {
     cart.forEach(function(item) {
       let row = `
         <tr>
-          <td><img src="${item.image}" alt="" style="width: 50px; height: 50px;"></td>
+          <td><img src="${item.image}" alt="" class="d-none d-sm-block" style="width: 50px; height: 50px;"></td>
           <td>${item.title}</td>
           <td>${item.description.substr(0, 50)}...</td>
           <td>${item.price}</td>
@@ -93,9 +93,9 @@ function displayCartItems() {
   cart.forEach(function(item, index) {
     let row = `
       <tr>
-        <td><img src="${item.image}" alt="" style="width: 150px; height: 90px;"></td>
+        <td><img src="${item.image}" alt="" class="d-none d-sm-block" style="width: 150px; height: 90px;"></td>
         <td>${item.title}</td>
-        <td>${item.description.substr(0, 50)}...</td>
+        <td class="d-none d-sm-block">${item.description.substr(0, 50)}...</td>
         <td>${item.price}</td>
         <td><button class="btn btn-danger delete-item" data-index="${index}">Delete</button></td>
       </tr>

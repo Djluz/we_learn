@@ -1,9 +1,11 @@
 
+
+
 #section{
   background-image: url(../image/5514.jpg);
     height: 650px;
-  
-     background-attachment: fixed;
+   background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 
 }
@@ -116,4 +118,23 @@
   .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+  }
+
+
+  @media (max-width: 576px) {
+    #section {
+      background-size: contain;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    #section {
+      background-size: cover;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    #section {
+      background-size: cover;
+    }
   }
