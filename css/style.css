@@ -1,0 +1,119 @@
+
+#section{
+  background-image: url(../image/5514.jpg);
+    height: 650px;
+  
+     background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+
+.card{
+  margin: 0 auto;
+  float: none;
+}
+
+.card-img-top{
+
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  transition: all ease-in-out .4s;
+}
+
+.card:hover .card-img-top{
+  transform: scale(1.10);
+}
+
+
+
+.card:hover{
+  background: beige;
+  font-size: 15px;
+  transition: all ease-in-out .4s;
+}
+
+
+
+
+
+.counter {
+  display: inline-block;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+
+/* Input fields */
+.form-control {
+  border: 1px solid #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact a{
+  text-decoration: none;
+  color:  black;
+}
+
+#contact a:hover{
+  color: white;
+}
+
+
+
+
+
+#floating-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }

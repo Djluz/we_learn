@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="image/WE-Learn Logo.png">
+    
+    
+
+    
+    <title>WE-Learn</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow ml-auto" id="navbarbg" >
+
+                   
+    <div class="navbar-brand mx-2">
+        <a class="navbar-brand fw-bold " href="#"><img src="image/logo2.png" width="50">We-Learn</a>
+    </div>
+
+   
+  
+      <ul class="navbar-nav  ms-auto fw-bold">
+  
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+          
+  
+  
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <li class="nav-link" href="#">
+                <a class="nav-link" href="#about" >About</a>
+            </li>
+
+            <li class="nav-link" href="#">
+                <a class="nav-link" href="#categories" >Categories</a>
+            </li>
+
+
+            <li class="nav-link" href="#">
+                <a class="nav-link" href="#popular" >Popular Courses</a>
+            </li>
+
+            <li class="nav-link" href="#">
+                <a class="nav-link" href="#" >Forum</a>
+            </li>
+
+            <li class="nav-link" href="#">
+                <a class="nav-link" href="#contact" >Contact Us</a>
+            </li>
+          
+  
+       
+          
+
+           </div>
+  </ul>
+
+   <!--  MODAL -->
+                
+   <button type="button" class="btn btn-none cart-button" data-bs-toggle="modal" data-bs-target="#myModal">
+                      <img src="image/icons8-cart-64.png">
+                      <span class="badge" id="badge">0</span>
+                      </button>
+
+                          <div class="modal" id="myModal">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Your Cart</h4>    
+                                  </div><div class="container"></div>
+                                  <div class="modal-body">
+                                        <table class="table table-striped">
+                                        <thead>
+                                      <tr>
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                      </tr>
+                                    </thead>
+                                    <tfoot>
+                                      <tr>
+                                        <td colspan="3"></td>
+                                        <td id="cart-total">Total: <span id="total-amount"></span></td>
+                                      </tr>
+                                    <tbody id="cart-table-body">
+                                    </tbody>
+                                    </table>
+                                                                
+                                            
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal" onclick="clickAlert()">Proceed to Checkout</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+     
+  
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+          
+                     <!--  MODAL -->
+                     <a href="#" id="floating-icon" class="text-end" >
+                  <img src="image/up-arrow.png" class="fixed-top my-5 py-5"  width="30"/>
+                </a>
+</nav>
+
+   
+  <section  class=" text-dark text-center" id="section">
+    <div class="container">
+
+      <div class="row text-center">
+
+        <div class="col-md my-5 d-flex  mx-auto" id="reg">
+          
+          <div class="login-form rounded d-flex mx-auto shadow">
+           
+            <form action="" method="POST">
+              <h2 class="fw-bold">Log in</h2>
+              <input type="text" class="form-control" name="username" id="username" required value="" placeholder="Username/Email"><br>
+              <input type="password" class="form-control" name="password" id="password" required value="" placeholder="Passwrod"><br>
+              <button class="btn btn-outline-primary">Log in</button><br>
+            </b><a href="#">Register</a>
+            </form>
+          </div>
+        
+   
+      </div>
+      
+      <div class="col-md my-5">
+
+        <div class="heading">
+                  <h1 class="fw-bold display-1">W<span class="text-warning">E</span>-L<span class="text-warning">e</span>arn</h1>
+                  <h5 class="fw-bold">Learn Today Earn Tomorrow</5><br>
+                  <a href="#popular-categories" class="btn btn-lg btn-primary my-2 rounded-pill" id="get-started">Get Started</a>
+         </div>
+      </div>
+   
+    </div>
+
+    
+    </div>
+      
+
+
+  </section>
+
+
+  <div class="container rounded shadow my-5 text-center"> 
+
+  <section class="reveal">
+                    <div class="container my-5">
+                        <div class="row">
+                      <h2 class="fw-bold my-5">Success by Numbers</h2>
+                            <div class="col-md rounded shadow-sm">
+                            <img src="image/education.png" width="50px" class="img-fluid">
+                          <div class="counter-info">
+                         <h1 class="counter" data-count="15000000">0</h1>
+                           <p>Student Graduates</p>
+                          </div>
+                            </div>
+
+                            <div class="col-md rounded shadow-sm">
+                            <img src="image/project.png" width="50px" class="img-fluid">
+                            <div class="counter-info">
+                            <h1 class="counter" data-count="12345678">0</h1>
+                            <p>Landed a job after Graduating</p>
+                            </div>
+                            </div>
+
+                            <div class="col-md rounded shadow-sm">
+                            <img src="image/infinity.png" width="50px" class="img-fluid">
+                              <div class="counter-info">
+                              <h1 class="counter" data-count="99999999999">0</h1>
+                              <p>I just wan to Count</p>
+                              </div>                            
+                           </div>
+
+                        
+                        </div>
+                    </div>
+  </section>
+
+
+
+
+
+
+  <section>
+    <div class="container reveal  my-5 text-center">
+      <h2 class="fw-bold my-5 py-5" id="about"><i>About</i></h2>
+                    <img src="image/WE-Learn Logo3.gif" class="img-fluid">
+                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod repellendus voluptatem commodi 
+                      tempore amet itaque illo alias magni dolore quia, 
+                      omnis tenetur cum assumenda, provident veniam quo ad dignissimos perferendis?</p>
+    </div>
+  </section>
+
+  <section>
+			<div class="container-fluid reveal my-5 py-5">
+					<h2 class="fw-bold my-5 py-5 text-center" id="categories"><i>Categories</i></h2>
+					<div class="row">
+
+						<div class="col-md">
+								<div class="row">
+									<div class="col-md-2">
+									<img src="image/app-development.png" class="img fluid" width="55px">
+									</div>
+									<div class="col-md">
+									<h4>Web Development</h4>
+									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
+										elit. Iste corrupti tempora maxime assumenda quod ut 
+										maiores quas repudiandae a corporis!</p>
+									</div>
+								</div>
+						
+
+						</div>
+
+						<div class="col-md">
+								<div class="row">
+									<div class="col-md-2">
+									<img src="image/mobile-development.png" class="img fluid" width="55px">
+									</div>
+									<div class="col">
+									<h4>Mobile App Developer</h4>
+									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
+										elit. Iste corrupti tempora maxime assumenda quod ut 
+										maiores quas repudiandae a corporis!</p>
+									</div>
+								</div>
+						
+
+						</div>
+
+					</div>
+
+								<div class="row">
+
+						<div class="col-md">
+								<div class="row">
+									<div class="col-md-2">
+									<img src="image/vector.png" class="img fluid" width="55px">
+									</div>
+									<div class="col-md">
+										<h4>Graphics Design</h4>
+									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
+										elit. Iste corrupti tempora maxime assumenda quod ut 
+										maiores quas repudiandae a corporis!</p>
+									
+									</div>
+								</div>
+						
+
+						</div>
+
+						<div class="col-md">
+								<div class="row">
+									<div class="col-md-2">
+									<img src="image/cyber-security.png" class="img fluid" width="55px">
+									</div>
+									<div class="col">
+									<h4>Cyber Security</h4>
+									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
+										elit. Iste corrupti tempora maxime assumenda quod ut 
+										maiores quas repudiandae a corporis!</p>
+									</div>
+								</div>
+						
+
+						</div>
+
+					</div>
+
+								<div class="row">
+
+						<div class="col-md">
+								<div class="row">
+									<div class="col-md-2">
+									<img src="image/dashboard.png" class="img fluid" width="55px">
+									</div>
+									<div class="col-md">
+										<h4>Data Analytics</h4>
+									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
+										elit. Iste corrupti tempora maxime assumenda quod ut 
+										maiores quas repudiandae a corporis!</p>
+									
+									</div>
+								</div>
+						
+
+						</div>
+
+						<div class="col-md">
+								<div class="row">
+									<div class="col-md-2">
+									<img src="image/browser.png	" class="img fluid" width="55px">
+									</div>
+									<div class="col">
+									<h4>Search Engine Optimization</h4>
+									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
+										elit. Iste corrupti tempora maxime assumenda quod ut 
+										maiores quas repudiandae a corporis!</p>
+									</div>
+								</div>
+						
+
+						</div>
+
+					</div>
+					
+				</div>
+</section>
+
+    <section>
+      <div class="container-fluid  my-5 py-5" >
+                      <h2 class="fw-bold my-5 py-5 text-center" id="popular"><i>Popular Courses</i></h2>
+              <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active w-25" id="nav-week-tab" data-bs-toggle="tab" data-bs-target="#nav-week" type="button" role="tab" aria-controls="nav-week" aria-selected="true">Popular This Week</button>
+                    <button class="nav-link w-25" id="nav-most-tab" data-bs-toggle="tab" data-bs-target="#nav-most" type="button" role="tab" aria-controls="nav-most" aria-selected="false">Most Enrolled Course</button>
+                    <button class="nav-link w-25" id="nav-discounted-tab" data-bs-toggle="tab" data-bs-target="#nav-discounted" type="button" role="tab" aria-controls="nav-discounted" aria-selected="false">Discounted Price</button>
+                    <button class="nav-link w-25" id="nav-top-tab" data-bs-toggle="tab" data-bs-target="#nav-top" type="button" role="tab" aria-controls="nav-top" aria-selected="false">Top Rated</button>
+                  </div>
+                </nav>
+          <!--TAB BUTTON END-->
+            
+          <div class="container text-center">
+                <!--FIRST TAB CONTENT START-->
+                <div class="tab-content text-center" id="nav-tabContent ">
+                  <div class="tab-pane fade show active" id="nav-week" role="tabpanel" aria-labelledby="nav-week-tab">
+
+                        <div class="row text-center   my-5">
+
+
+                                        
+                                           <div class="col-md d-flex  my-2" >
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/reac.png" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">React JS</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                         
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body mx-auto">
+                                                     
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                   
+
+
+
+                  
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/angular.jpg" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Angular</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                     
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                    
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body mx-auto">
+                                                     
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart" id="cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                       
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/bootstrap.png" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Bootstrap</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                         
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                        
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                    
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/javasccript.png" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">JavaScript</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                        </div>
+                  </div>
+                </div>
+                    <!--FIRST TAB CONTENT END-->
+                
+                <!--SECOND TAB CONTENT START-->
+                  <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-most" role="tabpanel" aria-labelledby="nav-most-tab">
+                              <div class="row text-center  my-5">
+
+                  
+                              <div class="col-md  d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/reac.png" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">React JS</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                      
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                   
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/android.png" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Android Developer</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                   
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+               
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/seo.jpg" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Search Engine Optimization</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                      
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                     
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/remote.jpeg" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Cyber Security</h5>
+                                                      <p class="card-text">asdajdhashdajshdkj  
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a></p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                      
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                        </div>
+                  </div>
+                </div>
+                <!--Second tab content end-->
+
+
+                <!--THIRD tab content start-->
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-discounted" role="tabpanel" aria-labelledby="nav-discounted-tab">
+                              <div class="row text-center  my-5">
+
+                              <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/science.jpg" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Data Science</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                  
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                  
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/vul.jpg" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Vulnerability Management</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                     
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                   
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/ios.png" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">iOs Developer</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                    
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                      
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/angular.jpg" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Angular</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                      
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                        </div>
+                  </div>
+                </div>
+                <!--Third tab content ent-->
+
+                <!--Fourth tab content start-->
+            <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-top" role="tabpanel" aria-labelledby="nav-top-tab">
+                              <div class="row text-center  my-5">
+
+                     
+                              <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/reac.png" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">React JS</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                            
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                 
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/javasccript.png" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">javaScript</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                     
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                    
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/hybrid.webp" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Hybrid App Developer</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                     
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                   
+                                        <div class="col-md d-flex my-2">
+                                                  <div class="card shadow" style="width: 18rem; height: 28rem;">
+                                                    <img src="image/seo.jpg" class="card-img-top" alt="..." >
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Search Engine Optimization</h5>
+                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      </p>
+                                                      <h6 class="card-price">Price:1000</h6>
+                                                      <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item text-warning">
+                                                          <div class="course-rating">
+                                                            <span class="average-rating">(4.5)</span>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                          </div>
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                    <div class="card-body">
+                                                  
+                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="detailsModalLabel">Full Details</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <!--COURSE DETAILS -->
+
+                                              <div class="container text-start">
+                                                            <h4 class="my-3">This Course Include:</h4>
+                                                    <div class="course-include">
+                                                        <ol class="list">
+                                                                <li class="text-muted"> <i class="fa-solid fa-clock"> &nbsp;</i>52 Hours Video</li>
+                                                                <li class="text-muted"> <i class="fas fa-newspaper"></i> &nbsp; 75 Articles</li>
+                                                                <li class="text-muted">  <i class="fa-solid fa-download"></i>&nbsp; Downloadable Resources</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-infinity"></i> &nbsp; LifeTime Access</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-universal-access"></i> &nbsp; Access Everywhere</li>
+                                                                <li class="text-muted"> <i class="fas fa-tasks"></i> &nbsp; Assignments</li>
+                                                                <li class="text-muted"> <i class="fas fa-project-diagram"></i> &nbsp; Projects</li>
+                                                                <li class="text-muted"> <i class="fa-solid fa-certificate"></i> &nbsp;Certificate Upon Completion</li>
+
+                                                                
+                                                                
+                                                                                </ol>
+                                                                            </div>
+
+                                                              <h4>What You'll Learn</h4>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
+                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
+                                                                    libero pariatur quasi debitis.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+
+                                                                </p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                    </div>
+
+                                                  
+
+                                                <!--COURSE DETAILS -->
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                        </div>
+                  </div>
+                </div>
+                <!--Fourth tab content start-->.
+                </div>
+      </div>   
+    </section>
+
+
+    <!--feedback section -->
+
+
+    <!--feedback section-->
+    
+
+   
+
+  <section class="my-5 reveal py-5" id="ourteam">
+      <div class="container reveal" >
+          <h2 class="display-5 my-5 py-5 fw-bold text-center text-uppercase"><i>Our Team</i></h2>
+
+              <div class="row text-center">
+                      <div class="col-md">
+                          <img class="rounded-circle bg-warning shadow-lg p-3 mb-5"  src="image/russel.jpg" width="280" />
+                          <h4 class="fw-bold"><i>John Russel</i></h5>
+                          <h5 class="fw-bold text-warning">Front-End Developer</h5>
+                          <a href="#"><img src="image/icons8-facebook-50.png" width="30" alt="facebook"></a>
+                          <a href="#"><img src="image/icons8-twitter-50.png" width="30" alt="twitter"></a>
+                          <a href="#"><img src="image/icons8-linkedin-circled-50.png" width="30" alt="Linkedin"></a>
+                      </div>
+
+
+                      <div class="col-md">
+                          <img class="rounded-circle bg-warning shadow-lg p-3 mb-5"  src="image/jane.png"  width="280"/>
+                          <h4 class="fw-bold"><i>Daryl Jane</i></h5>
+                            <h5 class="fw-bold text-warning">Back-End End Developer</h5>
+                              <a href="#"><img src="image/icons8-facebook-50.png" width="30" alt="facebook"></a>
+                              <a href="#"><img src="image/icons8-twitter-50.png" width="30" alt="twitter"></a>
+                              <a href="#"><img src="image/icons8-linkedin-circled-50.png"  width="30" alt="Linkedin"></a>
+                      </div>
+
+
+
+                      <div class="col-md">
+                         <img class="rounded-circle bg-warning shadow-lg p-3 mb-5"  src="image/maamluz.JPG" width="280" height="280" />
+                         <h4 class="fw-bold"><i>Maam Luz</i></h5>
+                          <h5 class="fw-bold text-warning">UI/UX Designer</h5>
+                          <a href="#"><img src="image/icons8-facebook-50.png" width="30" alt="facebook"></a>
+                          <a href="#"><img src="image/icons8-twitter-50.png" width="30" alt="twitter"></a>
+                          <a href="#"><img src="image/icons8-linkedin-circled-50.png" width="30" alt="Linkedin"></a>
+                      </div>
+
+              
+                     
+              </div>
+                          <p class="text-muted text-center my-5 py-5">Lorem ipsum dolor, sit amet 
+                              consectetur adipisicing elit. Hic consectetur doloremque culpa sed alias dolores ad, 
+                              repudiandae accusamus animi fuga impedit totam laboriosam odit 
+                              laudantium incidunt optio iusto ex omnis?.</p>
+      </div>
+</section>
+
+
+
+  
+ 
+</div>     
+
+<!-- FOOTER START -->
+<section class="text-center reveal"  id="contact" style="background-color: #23242a;"> 
+
+<div class="container ">
+
+<footer class="text-white text-center text-lg-start" >
+
+  <div class="container p-4">
+
+    <div class="row mt-4">
+
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">About W<span class="text-warning">e</span>-L<span class="text-warning">e</span>arn</h5>
+
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti.
+        </p>
+
+        <p>
+          Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+          molestias.
+        </p>
+
+        <div class="mt-4">
+
+          <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+
+          <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-linkedin-in"></i></i></a>
+
+          <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+  
+          <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4 pb-1">Subscribe to Newsletter</h5>
+
+        <div class="form-outline form-white mb-4">
+          <input type="text" id="formControlLg" class="form-control form-control-lg my-2">
+          <label class="form-label" for="formControlLg" style="margin-left: 0px;"><button class="btn btn-outline-warning ">Subscribe</button></label>
+        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Philippines </span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@welearn.com</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">0999999999</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">099999999</span>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Contact Us</h5>
+
+  
+        <form action="https://formbold.com/s/6lDv4" method="POST" >   
+            <input type="text" name="Fullname" class="form-control my-2" placeholder="Fullname" required>
+            <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
+
+          <textarea class="form-control my-2" id="Message" name="Message" placeholder="Enter Message" rows="3" required></textarea>
+      
+          <button class="btn btn-outline-warning my-2" type="submit">Submit</button>
+     </form>
+  </div>
+</div>
+
+
+ 
+  </div>
+
+
+
+ 
+
+</footer>
+
+</div>
+
+    </section>
+
+<!--FOOTER END -->
+
+
+
+
+
+
+<script src="js/count.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/addToCart.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/cbc56ed82a.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+
+
+
+
+
+</body>
+</html>
