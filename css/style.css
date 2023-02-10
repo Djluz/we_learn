@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar a{
+  color: black;
+}
+.navbar {
+
+  transition: all 0.3s ease;
+}
+.navbar.hidden {
+  transform: translateY(-100%);
+}
 
 
 
@@ -59,7 +83,9 @@
 }
 
 
-
+.modal-backdrop {
+  position:unset !important;
+}
 
 
 
@@ -80,11 +106,6 @@
 
 
 
-
-#floating-icon:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
 
 
 
