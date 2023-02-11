@@ -33,7 +33,7 @@ addToCartButtons.forEach(function(button) {
 function displayCartItems() {
     cart.forEach(function(item) {
       let row = `
-        <tr>
+        <tr class="text-center">
           <td><img src="${item.image}" alt="" class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" style="width: 50px; height: 50px;"></td>
           <td>${item.title}</td>
           <td class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">${item.description.substr(0, 50)}...</td>
@@ -92,7 +92,7 @@ function displayCartItems() {
 
   cart.forEach(function(item, index) {
     let row = `
-      <tr >
+      <tr class="text-center">
         <td><img src="${item.image}" alt="" class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" style="width: 150px; height: 90px;"></td>
         <td>${item.title}</td>
         <td class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">${item.description.substr(0, 50)}...</td>
