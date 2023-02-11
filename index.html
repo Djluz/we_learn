@@ -17,11 +17,11 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-none  ml-auto fixed-top" id="navbarbg" >
+  <nav class="navbar navbar-expand-lg ml-auto fixed-top" id="navbarbg" >
 
                    
-    <div class="navbar-brand mx-2">
-        <a class="navbar-brand fw-bold " href="#"><img src="image/logo2.png" width="50">W<span class="text-warning">E</span>-L<span class="text-warning">e</span>arn</a>
+    <div class="navbar-brand">
+        <a class="navbar-brand fw-bold fs-2" href="#"><img src="image/logo2.png" width="50">W<span class="text-warning">E</span>-L<span class="text-warning">e</span>arn</a>
     </div>
 
    
@@ -65,8 +65,8 @@
 
    <!--  MODAL -->
                 
-   <button type="button" class="btn btn-none cart-button" data-bs-toggle="modal" data-bs-target="#myModal">
-                      <img src="image/icons8-cart-64.png">
+   <button type="button" id="carticon" class="btn btn-none cart-button m-0 p-0" data-bs-toggle="modal" data-bs-target="#myModal">
+                      <img src="image/icons8-cart-64.png" width="50%">
                       <span class="badge" id="badge">0</span>
                       </button>
 
@@ -112,7 +112,7 @@
 </nav>
 
    
-  <section  class=" text-dark text-center my-5 pt-5" id="section">
+  <section  class=" text-dark text-center my-5 pt-3" id="section">
     <div class="container">
 
       <div class="row text-center my-5 pt-5">
@@ -122,11 +122,11 @@
           <div class="login-form rounded d-flex mx-auto shadow">
            
             <form action="" method="POST">
-              <h2 class="fw-bold">Log in</h2>
-              <input type="text" class="form-control" name="username" id="username" required value="" placeholder="Username/Email"><br>
-              <input type="password" class="form-control" name="password" id="password" required value="" placeholder="Passwrod"><br>
-              <button class="btn btn-outline-primary">Log in</button><br>
-            </b><a href="#">Register</a>
+              <h2 class="fw-bold">Log in</h2><br>
+              <input type="text" class="form-control" name="username" id="username" required value="" placeholder="Username/Email">
+              <input type="password" class="form-control" name="password" id="password" required value="" placeholder="Password"><br>
+              <button class="btn btn-warning" id="login">Log in</button><br><br>
+              <p>Don't have an account yet?<br><a href="#" id="register">Register Now!</a></p>
             </form>
           </div>
         
@@ -138,7 +138,7 @@
         <div class="heading">
                   <h1 class="fw-bold display-1">W<span class="text-warning">E</span>-L<span class="text-warning">e</span>arn</h1>
                   <h5 class="fw-bold">Learn Today Earn Tomorrow</5><br>
-                  <a href="#about" class="btn btn-lg btn-primary my-2 rounded-pill" id="get-started">Get Started</a>
+                  <a href="#about" class="btn btn-lg btn-outline-warning my-2 rounded-pill" id="get-started">Get Started</a>
          </div>
       </div>
    
@@ -152,10 +152,10 @@
   </section>
 
 
-  <div class="container rounded shadow my-5 text-center"> 
+  <div class="container rounded shadow text-center"> 
 
   <section class="reveal">
-                    <div class="container my-5">
+                    <div class="container">
                         <div class="row">
                       <h2 class="fw-bold my-5">Success by Numbers</h2>
                             <div class="col-md rounded shadow-sm">
@@ -178,7 +178,7 @@
                             <img src="image/infinity.png" width="50px" class="img-fluid">
                               <div class="counter-info">
                               <h1 class="counter" data-count="99999999999">0</h1>
-                              <p>I just wan to Count</p>
+                              <p>I just want to Count</p>
                               </div>                            
                            </div>
 
@@ -194,17 +194,33 @@
 
   <section>
     <div class="container reveal  my-5 text-center">
-      <h2 class="fw-bold my-5 py-5" id="about"><i>About</i></h2>
+      <h2 class="display-5 my-5 py-5 fw-bold text-center" id="about"><i>About</i></h2>
                     <img src="image/WE-Learn Logo3.gif" class="img-fluid">
-                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod repellendus voluptatem commodi 
-                      tempore amet itaque illo alias magni dolore quia, 
-                      omnis tenetur cum assumenda, provident veniam quo ad dignissimos perferendis?</p>
+                    <br><br><br>
+                    <div class="row">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-8 my-5">
+                        
+                        <h2>Improving lives through learning</h2><br>
+                        <p>Whether you want to learn or to share what you know, you've come to the right place.
+                          As a global destination for online learning, we connect people through knowledge.
+                        </p><br><br><br>
+                        <article id="vision" class="bg-warning p-5">
+                          <h1 class="text-start">OUR VISION</h1><br>
+                        <p class="fs-5">We envision a world where everyone can
+                          <span class="a">learn</span> and <span class="a">earn</span> wherever and whenever. We
+                          provide flexible, comfortable, and cost-effective online courses.
+                        </p>
+                        </article>
+                      </div>
+                      <div class="col-md-2"></div>
+                    </div>
     </div>
   </section>
 
   <section>
 			<div class="container-fluid reveal my-5 py-5">
-					<h2 class="fw-bold my-5 py-5 text-center" id="categories"><i>Categories</i></h2>
+					<h2 class="display-5 my-5 py-5 fw-bold text-center" id="categories"><i>Categories</i></h2>
 					<div class="row">
 
 						<div class="col-md">
@@ -214,9 +230,8 @@
 									</div>
 									<div class="col-md">
 									<h4>Web Development</h4>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
-										elit. Iste corrupti tempora maxime assumenda quod ut 
-										maiores quas repudiandae a corporis!</p>
+									<p class="text-muted">Learn to build websites and be a Front-End, Back-end, or Full-stack Web Developer with our Web Development courses.
+                  </p>
 									</div>
 								</div>
 						
@@ -230,9 +245,9 @@
 									</div>
 									<div class="col">
 									<h4>Mobile App Developer</h4>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
-										elit. Iste corrupti tempora maxime assumenda quod ut 
-										maiores quas repudiandae a corporis!</p>
+									<p class="text-muted">Learn to create software applications that
+                    run on a mobile device. When you have the skills, you can 
+                  execute your own app idea. </p>
 									</div>
 								</div>
 						
@@ -249,10 +264,10 @@
 									<img src="image/vector.png" class="img fluid" width="55px">
 									</div>
 									<div class="col-md">
-										<h4>Graphics Design</h4>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
-										elit. Iste corrupti tempora maxime assumenda quod ut 
-										maiores quas repudiandae a corporis!</p>
+										<h4>Graphic Design</h4>
+									<p class="text-muted">This is a great career for people who are creative 
+                    thinkers and enjoy art, technology, and communication. 
+                    Enhance your skills with our Graphic Design courses. </p>
 									
 									</div>
 								</div>
@@ -267,9 +282,9 @@
 									</div>
 									<div class="col">
 									<h4>Cyber Security</h4>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
-										elit. Iste corrupti tempora maxime assumenda quod ut 
-										maiores quas repudiandae a corporis!</p>
+									<p class="text-muted">You can get into cyber security even if you don't 
+                    have a cyber degree or background. Here's the complete courses for 
+                    breaking into the cyber security industry.</p>
 									</div>
 								</div>
 						
@@ -287,9 +302,8 @@
 									</div>
 									<div class="col-md">
 										<h4>Data Analytics</h4>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
-										elit. Iste corrupti tempora maxime assumenda quod ut 
-										maiores quas repudiandae a corporis!</p>
+									<p class="text-muted">These courses present you with a gentle introduction to 
+                    Data Analysis, the role of a Data Analyst, and the tools used in this job. </p>
 									
 									</div>
 								</div>
@@ -304,9 +318,8 @@
 									</div>
 									<div class="col">
 									<h4>Search Engine Optimization</h4>
-									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing 
-										elit. Iste corrupti tempora maxime assumenda quod ut 
-										maiores quas repudiandae a corporis!</p>
+									<p class="text-muted">Do you want to learn SEO but don't know where to start? 
+                    Learn everything you need to know here!</p>
 									</div>
 								</div>
 						
@@ -320,9 +333,9 @@
 
     <section>
       <div class="container-fluid  my-5 py-5" >
-                      <h2 class="fw-bold my-5 py-5 text-center" id="popular"><i>Popular Courses</i></h2>
+                      <h2 class="display-5 my-5 py-5 fw-bold text-center" id="popular"><i>Popular Courses</i></h2>
               <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <div class="nav nav-tabs"  id="nav-tab" role="tablist">
                     <button class="nav-link active w-25" id="nav-week-tab" data-bs-toggle="tab" data-bs-target="#nav-week" type="button" role="tab" aria-controls="nav-week" aria-selected="true">Popular This Week</button>
                     <button class="nav-link w-25" id="nav-most-tab" data-bs-toggle="tab" data-bs-target="#nav-most" type="button" role="tab" aria-controls="nav-most" aria-selected="false">Most Enrolled Course</button>
                     <button class="nav-link w-25" id="nav-discounted-tab" data-bs-toggle="tab" data-bs-target="#nav-discounted" type="button" role="tab" aria-controls="nav-discounted" aria-selected="false">Discounted Price</button>
@@ -345,20 +358,20 @@
                                                     <img src="image/reac.png" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">React JS</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll build...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
-                                                      <ul class="list-group list-group-flush">
+                                                      <ul class="list-group list-group-flush bg-none">
                                                         <li class="list-group-item text-warning">
                                                           <div class="course-rating">
-                                                            <span class="average-rating">(4.5)</span>
+                                                            <span class="average-rating">(5.0)</span>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <span class="reviews text-dark">9999 Ratings</span>
                                                           </div>
                                                          
                                                         </li>
@@ -366,7 +379,7 @@
                                                     </div>
                                                     <div class="card-body mx-auto">
                                                      
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -403,15 +416,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Introduction to what is React and its basic concepts</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Learn what are the stateful and stateless components and when to use them</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Working with React Modules, importing and exporting the modules
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> React component lifecycle and different lifecycle methods</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Working with function based and class based components</p>
                                                     </div>
 
                                                   
@@ -434,8 +445,8 @@
                                                     <img src="image/angular.jpg" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">Angular</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll learn...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                      
                                                       <h6 class="card-price">Price:1000</h6>
@@ -448,7 +459,7 @@
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                     
                                                         </li>
@@ -456,7 +467,7 @@
                                                     </div>
                                                     <div class="card-body mx-auto">
                                                      
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart" id="cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart" id="cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -493,15 +504,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Develop modern, complex, responsive and scalable web applications with Angular 14</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Use the gained, deep understanding of the Angular fundamentals to quickly establish yourself as a frontend developer</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Fully understand the architecture behind an Angular application and how to use it
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Create single-page applications with one of the most modern JavaScript frameworks out there</p>
+                                                                
                                                     </div>
 
                                                   
@@ -521,8 +530,8 @@
                                                     <img src="image/bootstrap.png" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">Bootstrap</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll learn...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
@@ -534,7 +543,7 @@
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <span class="reviews text-dark">9999 Ratings</span>
                                                           </div>
                                                          
                                                         </li>
@@ -542,7 +551,7 @@
                                                     </div>
                                                     <div class="card-body">
                         
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -579,15 +588,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will learn to Build customized Bootstrap 5 Web Apps</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will learn how to use Bootstrap 5 Containers</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will learn to create responsive images, tables and typography
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will learn all the Bootstrap 5 components like, Badge, Breadcrumb, Buttons, Button group, Card, and much more</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will learn to create customized Bootstrap 5 Forms.</p>
                                                     </div>
 
                                                   
@@ -608,27 +615,27 @@
                                                     <img src="image/javasccript.png" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">JavaScript</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll know...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
                                                         <li class="list-group-item text-warning">
                                                           <div class="course-rating">
-                                                            <span class="average-rating">(4.5)</span>
+                                                            <span class="average-rating">(5.0))</span>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <span class="reviews text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                 
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -665,15 +672,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Become an advanced, confident, and modern JavaScript developer from scratch</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> JavaScript fundamentals: variables, if/else, operators, boolean logic, functions, arrays, objects, loops, strings, etc.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Asynchronous JavaScript: Event loop, promises, async/await, AJAX calls and APIs
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i>How to think and work like a developer: problem-solving, researching, workflows</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> How to architect your code using flowcharts and common patterns</p>
                                                     </div>
 
                                                   
@@ -703,27 +708,27 @@
                                                     <img src="image/reac.png" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">React JS</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll learn...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
                                                         <li class="list-group-item text-warning">
                                                           <div class="course-rating">
-                                                            <span class="average-rating">(4.5)</span>
+                                                            <span class="average-rating">(5.0)</span>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <span class="reviews text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                       
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -760,15 +765,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Introduction to what is React and its basic concepts</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Learn what are the stateful and stateless components and when to use them</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Working with React Modules, importing and exporting the modules
 
-                                                                </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                              </p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> React component lifecycle and different lifecycle methods</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Working with function based and class based components</p>
                                                     </div>
 
                                                   
@@ -788,27 +791,27 @@
                                                     <img src="image/android.png" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">Android Developer</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll build...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
                                                         <li class="list-group-item text-warning">
                                                           <div class="course-rating">
-                                                            <span class="average-rating">(4.5)</span>
+                                                            <span class="average-rating">(5.0)</span>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                    
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -845,15 +848,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Learn Android App Development from Zero to Hero</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Master the Basics, Intermediate and Advanced topic and programming skills</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Building real apps and publish them to playstore
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Become a professional Native app developer</p>
+                                                               
                                                     </div>
 
                                                   
@@ -872,9 +873,9 @@
                                                   <div class="card shadow" style="width: 18rem; height: 28rem;">
                                                     <img src="image/seo.jpg" class="card-img-top" alt="..." >
                                                     <div class="card-body">
-                                                      <h5 class="card-title">Search Engine Optimization</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <h6 class="card-title">Search Engine Optimization</h6>
+                                                      <p class="card-text">In this course, you'll know...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
@@ -886,14 +887,14 @@
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                       
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -930,15 +931,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Complete SEO training from an industry veteran with over 16 years experience</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> An in-depth understanding of how search engines crawl, render and index websites</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Best practise technical SEO so search engine can easily discover, understand and rank your pages
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> The modern strategies and tactics being used by big agencies and winning websites</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i>In-depth keyword research tools and techniques to discover new opportunities</p>
                                                     </div>
 
                                                   
@@ -959,8 +958,8 @@
                                                     <img src="image/remote.jpeg" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">Cyber Security</h5>
-                                                      <p class="card-text">asdajdhashdajshdkj  
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a></p>
+                                                      <p class="card-text">In this course, you'll learn...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a></p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
                                                         <li class="list-group-item text-warning">
@@ -971,14 +970,14 @@
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                       
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1015,15 +1014,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Explore the threat landscape - Darknets, dark markets, zero day vulnerabilities, exploit kits, malware, phishing and much more.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Start a career in cyber security. Become a cyber security specialist.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> We cover operating system security, privacy, and patching - On Windows 7, Windows 8, Windows 10, MacOS and Linux.
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will master encryption in an easy to follow crash course.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will learn about nation state secret tracking and hacking infrastructure.</p>
                                                     </div>
 
                                                   
@@ -1053,8 +1050,8 @@
                                                     <img src="image/science.jpg" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">Data Science</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll get...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
@@ -1066,14 +1063,14 @@
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                   
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1110,15 +1107,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> The course provides the entire toolbox you need to become a data scientist</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Understand the mathematics behind Machine Learning (an absolute must which other courses don’t teach!)</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Perform linear and logistic regressions in Python
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Learn how to pre-process data</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Carry out cluster and factor analysis</p>
                                                     </div>
 
                                                   
@@ -1137,28 +1132,28 @@
                                                   <div class="card shadow" style="width: 18rem; height: 28rem;">
                                                     <img src="image/vul.jpg" class="card-img-top" alt="..." >
                                                     <div class="card-body">
-                                                      <h5 class="card-title">Vulnerability Management</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <h6 class="card-title">Vulnerability Management</h6>
+                                                      <p class="card-text">In this course, you'll know...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
                                                         <li class="list-group-item text-warning">
                                                           <div class="course-rating">
-                                                            <span class="average-rating">(4.5)</span>
+                                                            <span class="average-rating">(5.0)</span>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                      
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1195,15 +1190,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Assessment of vulnerabilities in specific environments</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Understand the multiple frameworks associated with government and private industry infrastructures</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Process of Vulnerability Management with different enterprise infrastructures
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Qualitative Management</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Risk Management Framework</p>
                                                     </div>
 
                                                   
@@ -1223,27 +1216,27 @@
                                                     <img src="image/ios.png" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">iOs Developer</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll build...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
                                                         <li class="list-group-item text-warning">
                                                           <div class="course-rating">
-                                                            <span class="average-rating">(4.5)</span>
+                                                            <span class="average-rating">(5.0)</span>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                     
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1280,15 +1273,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will create a portfolio of 15 apps to be able apply for junior developer jobs at a technology company</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You will learn by doing, where every lesson is incorporated into a real-world app project.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Start your own app based business
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Master creating Augmented Reality apps using Apple's new ARKit</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i>Master app design so you'll know how to wireframe, mockup and prototype your app idea</p>
                                                     </div>
 
                                                   
@@ -1309,8 +1300,8 @@
                                                     <img src="image/angular.jpg" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">Angular</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll get...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
@@ -1322,14 +1313,14 @@
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                       
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1366,15 +1357,12 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Develop modern, complex, responsive and scalable web applications with Angular 14</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Use the gained, deep understanding of the Angular fundamentals to quickly establish yourself as a frontend developer</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Fully understand the architecture behind an Angular application and how to use it
 
-                                                                </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                              </p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Create single-page applications with one of the most modern JavaScript frameworks out there</p>
                                                     </div>
 
                                                   
@@ -1403,27 +1391,27 @@
                                                     <img src="image/reac.png" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">React JS</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll build...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
                                                         <li class="list-group-item text-warning">
                                                           <div class="course-rating">
-                                                            <span class="average-rating">(4.5)</span>
+                                                            <span class="average-rating">(5.0)</span>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                             
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1460,15 +1448,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Introduction to what is React and its basic concepts</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Learn what are the stateful and stateless components and when to use them</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Working with React Modules, importing and exporting the modules
 
-                                                                </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                              </p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> React component lifecycle and different lifecycle methods</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Working with function based and class based components</p>
                                                     </div>
 
                                                   
@@ -1487,28 +1473,28 @@
                                                   <div class="card shadow" style="width: 18rem; height: 28rem;">
                                                     <img src="image/javasccript.png" class="card-img-top" alt="..." >
                                                     <div class="card-body">
-                                                      <h5 class="card-title">javaScript</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <h5 class="card-title">JavaScript</h5>
+                                                      <p class="card-text">In this course, you'll learn...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
                                                         <li class="list-group-item text-warning">
                                                           <div class="course-rating">
-                                                            <span class="average-rating">(4.5)</span>
+                                                            <span class="average-rating">(5.0)</span>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
-                                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                      
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1545,15 +1531,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Become an advanced, confident, and modern JavaScript developer from scratch</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> JavaScript fundamentals: variables, if/else, operators, boolean logic, functions, arrays, objects, loops, strings, etc.</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Asynchronous JavaScript: Event loop, promises, async/await, AJAX calls and APIs
 
-                                                                </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                              </p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i>How to think and work like a developer: problem-solving, researching, workflows</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> How to architect your code using flowcharts and common patterns</p>
                                                     </div>
 
                                                   
@@ -1573,8 +1557,8 @@
                                                     <img src="image/hybrid.webp" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">Hybrid App Developer</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll build...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
@@ -1586,14 +1570,14 @@
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <span class="reviews  text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                      
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1630,16 +1614,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You're taught step by step HOW to build Android 7 apps for Google's Nougat platform that will work on older Android versions.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> You'll have EXPERT LEVEL knowledge of the Java programming language and know exactly how each process of Android Nougat development works.</p>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> With each comprehensive step, the WHY you're doing it is explained.
 
                                                                 </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                    </div>
+                                                                <p><i class="fa fa-check" aria-hidden="true"></i> The course is continually UPDATED, so you'll learn the very latest as Android Nougat evolves.</p>
+                                                                
 
                                                   
 
@@ -1659,8 +1640,8 @@
                                                     <img src="image/seo.jpg" class="card-img-top" alt="..." >
                                                     <div class="card-body">
                                                       <h5 class="card-title">Search Engine Optimization</h5>
-                                                      <p class="card-text">Lorem ipsum quos numquam ea minus eligendi?
-                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</a>
+                                                      <p class="card-text">In this course, you'll learn...<br>
+                                                        <a class="" data-bs-toggle="modal" data-bs-target="#detailsModal">See details</a>
                                                       </p>
                                                       <h6 class="card-price">Price:1000</h6>
                                                       <ul class="list-group list-group-flush">
@@ -1672,14 +1653,14 @@
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fas fa-star" aria-hidden="true"></i>
                                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                                            <span class="reviews  text-success">9999 Ratings</span>
+                                                            <span class="reviews text-dark">9999 Ratings</span>
                                                           </div>
                                                         </li>
                                                       </ul>
                                                     </div>
                                                     <div class="card-body">
                                                   
-                                                      <button type="button" class="btn btn-primary card-link add-to-cart">Add to Cart</button>
+                                                      <button type="button" id="btncourse" class="btn card-link add-to-cart">Add to Cart</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -1716,15 +1697,13 @@
                                                                             </div>
 
                                                               <h4>What You'll Learn</h4>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis 
-                                                                    explicabo possimus dolorum, officiis libero aliquid! Corrupti 
-                                                                    libero pariatur quasi debitis.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, voluptates.
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Complete SEO training from an industry veteran with over 16 years experience</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> An in-depth understanding of how search engines crawl, render and index websites</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> Best practise technical SEO so search engine can easily discover, understand and rank your pages
 
-                                                                </p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
-                                                                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                                                              </p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i> The modern strategies and tactics being used by big agencies and winning websites</p>
+                                                              <p><i class="fa fa-check" aria-hidden="true"></i>In-depth keyword research tools and techniques to discover new opportunities</p>
                                                     </div>
 
                                                   
@@ -1757,7 +1736,7 @@
 
   <section class="my-5 reveal py-5" id="ourteam">
       <div class="container reveal" >
-          <h2 class="display-5 my-5 py-5 fw-bold text-center text-uppercase"><i>Our Team</i></h2>
+          <h2 class="display-5 my-5 py-5 fw-bold text-center"><i>Our Team</i></h2>
 
               <div class="row text-center">
                       <div class="col-md">
@@ -1793,10 +1772,17 @@
               
                      
               </div>
-                          <p class="text-muted text-center my-5 py-5">Lorem ipsum dolor, sit amet 
-                              consectetur adipisicing elit. Hic consectetur doloremque culpa sed alias dolores ad, 
-                              repudiandae accusamus animi fuga impedit totam laboriosam odit 
-                              laudantium incidunt optio iusto ex omnis?.</p>
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                    <p class="text-muted text-center my-5 py-5">At WE-Learn, we're all learners and instructors. We live out our values 
+                      every day to create a culture that is diverse, inclusive, and committed to helping employees thrive.
+                      We're committed to improving lives through learning. Dig into our original research to learn about 
+                      the forces that are shaping the modern workplace</p>
+                  </div>
+                  <div class="col-md-2"></div>
+                </div>
+                          
       </div>
 </section>
 
@@ -1818,19 +1804,15 @@
     <div class="row mt-4">
 
       <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">About W<span class="text-warning">e</span>-L<span class="text-warning">e</span>arn</h5>
+        <h5 class="title mb-4">ABOUT W<span class="text-warning">e</span>-L<span class="text-warning">e</span>arn</h5>
 
         <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti.
+          WE-Learn is the global online learning platform that offers anyone, anywhere access to online courses and degrees from world-class universities and companies.
         </p>
 
-        <p>
-          Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-          molestias.
-        </p>
+        
 
-        <div class="mt-4">
+        <div class="my-4">
 
           <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
 
@@ -1854,16 +1836,16 @@
         <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
 
         <ul class="fa-ul" style="margin-left: 1.65em;">
-          <li class="mb-3">
+          <li class="mb-1">
             <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Philippines </span>
           </li>
-          <li class="mb-3">
+          <li class="mb-1">
             <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@welearn.com</span>
           </li>
-          <li class="mb-3">
+          <li class="mb-1">
             <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">0999999999</span>
           </li>
-          <li class="mb-3">
+          <li class="mb-1">
             <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">099999999</span>
           </li>
         </ul>
