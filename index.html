@@ -75,28 +75,30 @@
                                 <div class="modal-content">
                                   <div class="modal-header">
                                     <h4 class="modal-title">Your Cart</h4>    
-                                  </div><div class="container"></div>
+                                  </div>
+                                
                                   <div class="modal-body">
-                                        <table class="table table-striped">
-                                        <thead>
-                                      <tr>
-                                        <th class="d-none d-sm-block">Image</th>
+                                 
+                                        <table class="table table-striped ">
+                                        <thead >
+                                      <tr >
+                                        <th class="d-none d-sm-block d-sm-none d-md-block">Image</th>
                                         <th >Title</th>
-                                        <th class="d-none d-sm-block">Description</th>
-                                        <th>Price</th>
+                                        <th class="d-none d-sm-block d-sm-none d-md-block">Description</th>
+                                        <th class="d-xs-none">Price</th>
                                       </tr>
                                     </thead>
                                     <tfoot>
                                       <tr>
                                         <td colspan="3"></td>
-                                        <td id="cart-total">Total: <span id="total-amount"></span></td>
+                                        <td id="cart-total" class="d-flex text-center">Total: <span id="total-amount"></span></td>
                                       </tr>
                                     <tbody id="cart-table-body">
                                     </tbody>
                                     </table>
-                                                                
-                                            
+                                   
                             </div>
+                          
                             <div class="modal-footer">
                             <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal" onclick="clickAlert()">Proceed to Checkout</button>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
