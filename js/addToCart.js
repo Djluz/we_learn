@@ -33,12 +33,12 @@ addToCartButtons.forEach(function(button) {
 function displayCartItems() {
     cart.forEach(function(item) {
       let row = `
-        <tr>
-          <td><img src="${item.image}" alt="" class="d-none d-sm-block" style="width: 50px; height: 50px;"></td>
+        <tr class="text-center">
+          <td><img src="${item.image}" alt="" class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" style="width: 50px; height: 50px;"></td>
           <td>${item.title}</td>
-          <td>${item.description.substr(0, 50)}...</td>
+          <td class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">${item.description.substr(0, 50)}...</td>
           <td>${item.price}</td>
-          <td><button class="btn btn-danger delete-from-cart">Delete</button></td>
+          <td><button class="btn btn-sm btn-danger delete-from-cart">Delete</button></td>
         </tr>
       `;
       tableBody.insertAdjacentHTML('beforeend', row);
@@ -92,12 +92,12 @@ function displayCartItems() {
 
   cart.forEach(function(item, index) {
     let row = `
-      <tr>
-        <td><img src="${item.image}" alt="" class="d-none d-sm-block" style="width: 150px; height: 90px;"></td>
+      <tr class="text-center">
+        <td><img src="${item.image}" alt="" class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" style="width: 150px; height: 90px;"></td>
         <td>${item.title}</td>
-        <td class="d-none d-sm-block">${item.description.substr(0, 50)}...</td>
+        <td class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">${item.description.substr(0, 50)}...</td>
         <td>${item.price}</td>
-        <td><button class="btn btn-danger delete-item" data-index="${index}">Delete</button></td>
+        <td><button class="btn btn-sm btn-danger delete-item" data-index="${index}">Delete</button></td>
       </tr>
     `;
 
