@@ -64,13 +64,9 @@ function reveal(){
 }
 
 
-
-
-
-
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
-    spaceBetween: 25,
+    spaceBetween: 20,
     loop: true,
     centerSlide: 'true',
     fade: 'true',
@@ -84,18 +80,20 @@ var swiper = new Swiper(".slide-content", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-
+  
     breakpoints:{
         0: {
             slidesPerView: 1,
         },
+        
+        
         520: {
             slidesPerView: 2,
         },
+   
         950: {
             slidesPerView: 3,
         },
     },
   });
-
   
