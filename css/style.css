@@ -69,10 +69,6 @@ body{
   border-radius: 10px;
   box-shadow: 0 3px 10px gray;
 }
-span.a{
-  font-weight: bold;
-  font-size: 25px;
-}
 
 .nav-tabs .nav-link {
   color:darkgoldenrod;
@@ -170,15 +166,6 @@ input[type='password']:focus
 
 
 
-
-
-
-
-
-#contact a{
-  text-decoration: none;
-  color:  black;
-}
 
 #contact a:hover{
   color: white;
@@ -399,3 +386,6 @@ input[type='password']:focus
   background-color: rgb(206, 151, 11);
   color: white;
 }
+
+
+
