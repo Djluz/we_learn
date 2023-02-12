@@ -167,52 +167,6 @@ window.addEventListener("storage", function (e) {
   
 
 
-  
-
-  document.getElementById("checkout-button").addEventListener("click", function() {
-
-    if (cart.length === 0) {
-      alert("Your cart is empty, please add items to proceed to checkout");
-      return;
-      }
-    document.getElementById("checkout-form").style.display = "block";
-});
-
-document.getElementById("submit-button").addEventListener("click", function() {
-  var customerInfo = {
-      name: document.getElementById("name").value,
-      address: document.getElementById("address").value,
-      paymentMethod: document.getElementById("payment-method").value
-  };
-
-  if (!customerInfo.name || !customerInfo.address || !customerInfo.paymentMethod) {
-      alert("Please fill out all the fields");
-      return;
-  }
-
-  alert("Payment successfully processed!\n" +
-      "Name: " + customerInfo.name + "\n" +
-      "Address: " + customerInfo.address + "\n" +
-      "Payment Method: " + customerInfo.paymentMethod);
-  document.getElementById("myModal").style.display = "none";
-
-  cart = [];
-  localStorage.setItem("cart", JSON.stringify(cart));
-
-
-
-
-
-    window.close();
-  });
-  
-
-
-
-
-
-
-
 
   function clickAlert() {
     alert("Sign in to your account First!");
