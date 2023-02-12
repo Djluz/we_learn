@@ -6,9 +6,12 @@
 }
 body{
   background-image: url(../image/backgroundpic.png);
-  
-  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -16,8 +19,12 @@ body{
   z-index: 999;
 }
 
+
+
 .navbar a{
   color: black;
+  font-weight: 700;
+  font-size: 20;
 }
 .navbar {
   transition: all 0.3s ease;
