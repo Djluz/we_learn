@@ -378,7 +378,7 @@ input[type='password']:focus
   background-color: gold;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
   .slide-content{
     margin: 0 10px;
   }
@@ -399,3 +399,5 @@ input[type='password']:focus
   background-color: rgb(206, 151, 11);
   color: white;
 }
+
+
