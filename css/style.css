@@ -137,28 +137,100 @@ body{
 }
 
 /* Input fields */
-.form-control {
-  border: 1px solid goldenrod;
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-}
+
 input[type='text']:focus,
-input[type='password']:focus
+input[type='password']:focus,
+input[type='email']:focus
 {
   border-color: gold;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px gold;
   outline: 0 none;
 }
-#login:hover{
+textarea:focus{
+  border-color: gold;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px gold;
+  outline: 0 none;
+}
+#Message:focus{
+  border-color: gold;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px gold;
+  outline: 0 none;
+}
+#login-form-submit:hover{
   background-color: white;
 }
-#register{
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+#login-error-msg {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+#error-msg-second-line {
+  display: block;
+}
+.button-reg{
   margin-top: 5px;
   color:darkgoldenrod;
+  border: none;
+  background-color: none;
+  text-decoration: underline;
+
 }
-#register:hover{
+#login-form {
+  width: 100%;
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  
+}
+
+.login-form-field::placeholder {
+  color: rgb(172, 169, 169);
+  font-size: 15px;
+  align-self: center;
+}
+
+.login-form-field {
+  width: 100%;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-color: rgb(209, 207, 207);
+  padding: 0px 0px 5px 5px;
+  opacity: 0.8;
+}
+
+
+.button-reg:hover{
   color:black
+}
+
+#cancelbtn{
+  border-radius: 5px;
+  border: none;
+  background-color: gray;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+#cancelbtn:hover{
+  background-color: black;
+  color: white;
 }
 .modal-backdrop {
   position:unset !important;
@@ -343,6 +415,7 @@ input[type='password']:focus
   background-color: rgb(206, 151, 11);
   color: white;
 }
+
 .swiper-navBtn{
   transition: color 0.3s ease;
 }
@@ -374,7 +447,7 @@ input[type='password']:focus
   }
 }
 
-.close{
+.close, {
   border-radius: 5px;
   border: none;
   background-color: gold;
