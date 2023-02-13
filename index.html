@@ -116,22 +116,29 @@
    
   <section  class=" text-dark text-center my-5 pt-3" id="section">
     <div class="container">
-
+      
       <div class="row text-center my-5 pt-5">
 
         <div class="col-md my-5 d-flex  mx-auto" id="reg">
           
           <div class="login-form rounded d-flex mx-auto shadow">
-           
-            <form action="" method="POST">
-              <h2 class="fw-bold">Log in</h2><br>
-              <input type="text" class="form-control" name="username" id="username" required value="" placeholder="Username/Email">
-              <input type="password" class="form-control" name="password" id="password" required value="" placeholder="Password"><br>
-              <button class="btn btn-warning" id="login">Log in</button><br><br>
-              <p>Don't have an account yet?<br><a href="#" id="register">Register Now!</a></p>
+            
+            
+            <form action="" method="POST" id="login-form">
+              <h2 class="fw-bold">Log in</h2>
+              <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+              </div>
+              <input type="text" class="login-form-field" name="username" id="username-field" required value="" placeholder="Username/Email">
+              <input type="password" class="login-form-field" name="password" id="password-field" required value="" placeholder="Password">
+              <button class="btn btn-warning" id="login-form-submit">Log in</button><br><br>
+              <p>Don't have an account yet?<br>
+                <button class="button-reg" data-bs-toggle="modal" data-bs-target="#modalregister">Register Now!</button>
+                
             </form>
+            
           </div>
-        
+          
    
       </div>
       
@@ -152,6 +159,67 @@
 
 
   </section>
+  <!------------------------------ Modal for Register ------------------------------------->
+  <!-- The Modal -->
+  <div class="modal fade" id="modalregister">
+      <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+      
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h3 class="modal-title fw-bold text-center" id="titlefont">Registration</h3><br><br>
+              </div>
+      
+              <!-- Modal body -->
+              <div class="modal-body">
+                <form class="needs-validation mx-2" novalidate>
+                  <div class="form-group-lg fs-5 py-1">
+                      <label for="name">First Name</label>
+                      <input type="text" class="form-control" id="fname" aria-describedby="name" required/>
+                      <div class="valid-feedback">Valid</div>
+                      <div class="invalid-feedback "></div>
+                  </div>
+                  <div class="form-group-lg fs-5 py-1">
+                    <label for="name">Last Name</label>
+                    <input type="text" class="form-control" id="lname" aria-describedby="name" required/>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback "></div>
+                </div>
+                  <div class="form-group-lg fs-5 py-1">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="email" required/>
+                      <div class="valid-feedback">Valid</div>
+                      <div class="invalid-feedback">Invalid Email</div>
+                  </div>
+                  <div class="form-group-lg fs-5 py-1">
+                    <label for="name">Username</label>
+                    <input type="text" class="form-control" id="uname" aria-describedby="name" required/>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback "></div>
+                </div>
+                <div class="form-group-lg fs-5 py-1">
+                  <label for="name">Password</label>
+                  <input type="password" class="form-control" id="password" aria-describedby="name" required/>
+                  <div class="valid-feedback">Valid</div>
+                  <div class="invalid-feedback "></div>
+              </div>
+              </form>
+              </div>
+      
+              <!-- Modal footer -->
+              <div class="modal-footer">
+
+                <div class="d-flex justify-content-center  ">
+                  <button type="submit" class="button btn-primary px-4 " id="subscribebtn" data-bs-dismiss="modal" >Register</button>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                  <button type="button" class="btn px-3 " id="cancelbtn" data-bs-dismiss="modal">Cancel</button>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
 
  
@@ -2300,10 +2368,10 @@
 
   <div class="container p-4">
 
-    <div class="row mt-4">
+    <div class="row mt-2">
 
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="title mb-4">ABOUT W<span class="text-warning">e</span>-L<span class="text-warning">e</span>arn</h5>
+      <div class="col-lg-4 col-md-12 mb-0 mb-md-0">
+        <h5 class="title mb-2">ABOUT W<span class="text-warning">e</span>-L<span class="text-warning">e</span>arn</h5>
 
         <p>
           WE-Learn is the global online learning platform that offers anyone, anywhere access to online courses and degrees from world-class universities and companies.
@@ -2326,8 +2394,8 @@
 
 
 
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4 pb-1">Subscribe to Newsletter</h5>
+      <div class="col-lg-4 col-md-6 mb-0 mb-md-0">
+        <h5 class="text-uppercase mb-2 pb-1">Subscribe to Newsletter</h5>
 
         <div class="form-outline form-white mb-4">
           <input type="text" id="formControlLg" class="form-control form-control-lg my-2" placeholder="Enter your Email">
@@ -2352,8 +2420,8 @@
 
 
 
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">Contact Us</h5>
+      <div class="col-lg-4 col-md-6 mb-0 mb-md-0">
+        <h5 class="text-uppercase mb-2">Contact Us</h5>
 
   
         <form action="https://formbold.com/s/6lDv4" method="POST" >   
